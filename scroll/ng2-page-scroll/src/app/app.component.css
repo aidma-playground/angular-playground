@@ -1,0 +1,23 @@
+#boxContainer{
+min-width: 4000px;
+  overflow: hidden;
+}
+
+#right, #left{
+  /*float: left;*/
+  min-height: 500px;
+}
+
+#left{
+  background: #00f;
+}
+
+#right{
+  background: #f00;
+}
+
+#boxContainer::after{
+    content: "";
+    display: table;
+  clear: both;
+}
